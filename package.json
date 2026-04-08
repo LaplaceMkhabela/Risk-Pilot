@@ -1,0 +1,21 @@
+{
+  "name": "risk-pilot",
+  "version": "1.0.0",
+  "description": "RiskPilot is an AI-powered cognitive buffer designed to intercept and analyze digital communications before you fall victim to social engineering. Unlike traditional antivirus software that scans for \"malicious code,\" RiskPilot scans for malicious intent.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaplaceMkhabela/Risk-Pilot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LaplaceMkhabela/Risk-Pilot/issues"
+  },
+  "homepage": "https://github.com/LaplaceMkhabela/Risk-Pilot#readme"
+}
