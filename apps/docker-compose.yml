@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  gateway:
+    build: ./apps/gateway-service
+    ports: ["3000:3000"]
+    environment:
+      - ANALYSIS_SERVICE_URL=http://analysis:3001
+      - COMMUNITY_SERVICE_URL=http://community:3002
+
+  analysis:
+    build: ./apps/analysis-service
+    ports: ["3001:3001"]
+
+  community:
+    build: ./apps/community-service
+    ports: ["3002:3002"]
+    depends_on: [redis, mongo]
+
+  redis:
+    image: redis:alpine
+  
+  mongo:
+    image: mongo:latest
